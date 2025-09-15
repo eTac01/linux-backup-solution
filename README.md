@@ -47,8 +47,8 @@ It was developed as part of an academic project submitted to **L&T EduTech**.
 
 ### 1. Clone this repository:
 ```bash
-   git clone https://github.com/<your-username>/data-backup-linux.git
-   cd data-backup-linux
+   git clone https://github.com/eTac01/linux-backup-solution.git
+   cd linux-backup-solution
 
 2. Configure backup.sh:
 
