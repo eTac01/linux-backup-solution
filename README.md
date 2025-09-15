@@ -46,7 +46,7 @@ It was developed as part of an academic project submitted to **L&T EduTech**.
 ### 1. Clone this repository:
 ```bash
    git clone https://github.com/<your-username>/data-backup-linux.git
-   cd data-backup-linux'''
+   cd data-backup-linux
 
 2. Configure backup.sh:
 
@@ -97,3 +97,8 @@ It was developed as part of an academic project submitted to **L&T EduTech**.
    -> Segment networks with firewalls & IDS/IPS.
 
    -> Conduct regular vulnerability assessments.
+
+📂 Documentation
+
+The complete report with detailed steps, screenshots, and results is available here:
+
