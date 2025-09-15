@@ -73,6 +73,7 @@ LOG_FILE="/var/log/backup.log"
 # -v : verbose output
 # -z : compress file data during transfer
 # --delete : delete files in destination that are no longer in source
+
 RSYNC_OPTIONS="-avz --delete"
 
 # -------- SCRIPT EXECUTION --------
@@ -80,10 +81,12 @@ echo "===============================" >> $LOG_FILE
 echo "Backup started: $(date)" >> $LOG_FILE
 
 # Run rsync command
+
 rsync $RSYNC_OPTIONS -e ssh $SOURCE_DIR ${DEST_USER}@${DEST_IP}:$DEST_DIR >> $LOG_FILE 2>&1
 
 # Check exit status
 if [ $? -eq 0 ]; then
+
     echo "Backup completed successfully at $(date)" >> $LOG_FILE
 else
     echo "Backup FAILED at $(date)" >> $LOG_FILE
@@ -148,10 +151,5 @@ echo "===============================" >> $LOG_FILE
    -> Segment networks with firewalls & IDS/IPS.
 
    -> Conduct regular vulnerability assessments.
-
-📂 Documentation
-
-The complete report with detailed steps, screenshots, and results is available here:
-'''bash exit 0
 
 
