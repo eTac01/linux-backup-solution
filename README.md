@@ -45,55 +45,55 @@ It was developed as part of an academic project submitted to **L&T EduTech**.
 
 ### 1. Clone this repository:
 ```bash
-git clone https://github.com/<your-username>/data-backup-linux.git
-cd data-backup-linux
+   git clone https://github.com/<your-username>/data-backup-linux.git
+   cd data-backup-linux'''
 
 2. Configure backup.sh:
 
-Edit the script with your source, destination, and server IP.
+   Edit the script with your source, destination, and server IP.
 
 3. Run a Manual Backup:
-bash src/backup.sh
+      bash src/backup.sh
 
 4. Schedule with Cron:
 
-Open crontab:
+   Open crontab:
 
-crontab -e
+      crontab -e
 
 
-Example (daily at 1 AM):
+      Example (daily at 1 AM):
 
-0 1 * * * bash /path/to/backup.sh
+      0 1 * * * bash /path/to/backup.sh
 
 📊 Findings
 
-Rsync transfers completed within allocated time.
+   -> Rsync transfers completed within allocated time.
 
-Backups remained unaffected even after deletion from the source.
+   -> Backups remained unaffected even after deletion from the source.
 
-Scheduling worked smoothly using cron jobs.
+   -> Scheduling worked smoothly using cron jobs.
 
-Scalability was validated using multiple Linux systems.
+   -> Scalability was validated using multiple Linux systems.
 
 ⚠️ Security Considerations
 
-Potential exploitation risks:
+   -> Potential exploitation risks:
 
-Unauthorized access
+   -> Unauthorized access
 
-MITM attacks during transfer
+   -> MITM attacks during transfer
 
-Injection of malicious code into backups
+   -> Injection of malicious code into backups
 
 ✅ Recommendations
 
-Use AES-256 encryption for backup data.
+   -> Use AES-256 encryption for backup data.
 
-Implement role-based access control & MFA.
+   -> Implement role-based access control & MFA.
 
-Regularly patch backup systems.
+   -> Regularly patch backup systems.
 
-Segment networks with firewalls & IDS/IPS.
+   -> Segment networks with firewalls & IDS/IPS.
 
-Conduct regular vulnerability assessments.
+   -> Conduct regular vulnerability assessments.
